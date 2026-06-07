@@ -3,13 +3,19 @@ import { Link } from "react-router-dom";
 
 const Menu = () => {
   const [selectionMenu, setSelectionMenu] = useState(0);
+  const [isProfileDropdownOpen, setisProfileDropdownOpen] = useState(false);
 
   const handleMenuClick = (index) => {
     setSelectionMenu(index);
   };
 
+  const handleProfileClick = () => {
+    setisProfileDropdownOpen(!isProfileDropdownOpen);
+  };
+
   const handleLogout = () => {
     localStorage.removeItem("isLoggedIn");
+    localStorage.removeItem("redirectTo");
     window.location.href = "https://zerodhafrontend-cg69.onrender.com";
   };
 
@@ -54,18 +60,21 @@ const Menu = () => {
         </ul>
         <hr />
 
-        {/* Logout Button */}
-        <button onClick={handleLogout} style={{
-          padding: "8px 20px",
-          backgroundColor: "#dc3545",
-          color: "white",
-          border: "none",
-          borderRadius: "5px",
-          cursor: "pointer",
-          width: "100%"
-        }}>
+       
+
+        {/* Sirf logout button add kiya */}
+        <p 
+          onClick={handleLogout} 
+          style={{
+            cursor: "pointer",
+            color: "red",
+            fontSize: "14px",
+            marginTop: "10px",
+            paddingLeft: "10px"
+          }}
+        >
           Logout
-        </button>
+        </p>
 
       </div>
     </div>
