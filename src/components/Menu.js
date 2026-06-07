@@ -14,8 +14,7 @@ const Menu = () => {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem("isLoggedIn");
-    localStorage.removeItem("redirectTo");
+    
     window.location.href = "https://zerodhafrontend-cg69.onrender.com";
   };
 
@@ -73,7 +72,7 @@ const Menu = () => {
             paddingLeft: "10px"
           }}
         >
-          Logout
+          Home
         </p>
 
       </div>
