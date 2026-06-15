@@ -53,7 +53,7 @@ const Menu = () => {
           </li>
           <li>
             <Link style={{textDecoration:"none"}} to="/apps" onClick={() => handleMenuClick(5)}>
-              <p className={selectionMenu === 5 ? activeMenuClass : menuClass}>Apps</p>
+              <p className={selectionMenu === 5 ? activeMenuClass : menuClass}>Sell</p>
             </Link>
           </li>
         </ul>
