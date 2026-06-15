@@ -103,7 +103,7 @@ const WatchListActions = ({uid})=>{
   };
 
    const handleSellClick = () => {
-    generalContext.openBuyWindow(uid);
+    generalContext.openSellWindow(uid);
   };
   return(
     <span className="actions">
