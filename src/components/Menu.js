@@ -70,7 +70,7 @@ const Menu = () => {
             fontSize: "14px",
             marginTop: "10px",
             paddingLeft: "10px"
-          }}
+          }} 
         >
           Home
         </p>
