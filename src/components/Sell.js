@@ -5,7 +5,7 @@ import axios from "axios";
 
 
 
-const Orders = () => {
+const Sell = () => {
   let [SellOrders,setsellOrders] = useState([]);
      useEffect(()=>{
          axios.get("https://zerodhabackend-m6gu.onrender.com/SellOrders").then((res)=>{
@@ -17,12 +17,12 @@ const Orders = () => {
    
   return (
     <>
-      <h3 className="title">Orders ({SellOrders.length})</h3>
+      <h3 className="title">SellOrders ({SellOrders.length})</h3>
 
       <div className="order-table">
         <table>
           <tr>
-            <th>Namet</th>
+            <th>Name</th>
             <th>Qty.</th>
             <th>Price</th>
           </tr>
@@ -48,4 +48,4 @@ const Orders = () => {
   );
 };
 
-export default Orders;
+export default Sell;
