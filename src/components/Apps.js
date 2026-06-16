@@ -6,11 +6,11 @@ import axios from "axios";
 
 
 const Orders = () => {
-  let [SellOrders,setSellOrders] = useState([]);
+  let [SellOrders,setsellOrders] = useState([]);
      useEffect(()=>{
          axios.get("https://zerodhabackend-m6gu.onrender.com/SellOrders").then((res)=>{
           console.log(res)
-          setallOrders(res.data)
+          setsellOrders(res.data)
          })
      },[]);
 
