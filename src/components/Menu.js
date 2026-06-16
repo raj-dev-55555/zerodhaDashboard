@@ -31,11 +31,7 @@ const Menu = () => {
               <p className={selectionMenu === 0 ? activeMenuClass : menuClass}>Dashboard</p>
             </Link>
           </li>
-          <li>
-            <Link style={{textDecoration:"none"}} to="/orders" onClick={() => handleMenuClick(1)}>
-              <p className={selectionMenu === 1 ? activeMenuClass : menuClass}>Orders</p>
-            </Link>
-          </li>
+        
           <li>
             <Link style={{textDecoration:"none"}} to="/holdings" onClick={() => handleMenuClick(2)}>
               <p className={selectionMenu === 2 ? activeMenuClass : menuClass}>Holding</p>
@@ -46,16 +42,22 @@ const Menu = () => {
               <p className={selectionMenu === 3 ? activeMenuClass : menuClass}>Positions</p>
             </Link>
           </li>
+            <li>
+            <Link style={{textDecoration:"none"}} to="/orders" onClick={() => handleMenuClick(1)}>
+              <p className={selectionMenu === 1 ? activeMenuClass : menuClass}>Orders</p>
+            </Link>
+          </li>
+           <li>
+            <Link style={{textDecoration:"none"}} to="/sells" onClick={() => handleMenuClick(5)}>
+              <p className={selectionMenu === 5 ? activeMenuClass : menuClass}>Sell</p>
+            </Link>
+          </li>
           <li>
             <Link style={{textDecoration:"none"}} to="/funds" onClick={() => handleMenuClick(4)}>
               <p className={selectionMenu === 4 ? activeMenuClass : menuClass}>Funds</p>
             </Link>
           </li>
-          <li>
-            <Link style={{textDecoration:"none"}} to="/sells" onClick={() => handleMenuClick(5)}>
-              <p className={selectionMenu === 5 ? activeMenuClass : menuClass}>Sell</p>
-            </Link>
-          </li>
+         
         </ul>
         <hr />
 
