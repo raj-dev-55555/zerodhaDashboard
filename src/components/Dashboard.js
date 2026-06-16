@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
-import Apps from "./Apps";
+import Sell from "./Sell";
 import Funds from "./Funds";
 import Holdings from "./Holdings";
 
